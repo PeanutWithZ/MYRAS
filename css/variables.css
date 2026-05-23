@@ -1,0 +1,14 @@
+/* ===== CSS VARIABLES — extracted from MYRAS logo ===== */
+:root {
+  --brand-navy: #1a2547; /* dark navy   — logo border, A & S letters, primary UI */
+  --brand-red: #cc2228; /* bold red     — logo Y letter, accents, CTA hover     */
+  --brand-gold: #e8a820; /* amber gold   — logo R letter, highlights, dividers   */
+  --brand-gray: #8a9099; /* silver gray  — logo M letter outline, muted UI       */
+  --brand-white: #ffffff; /* white        — logo background, text on dark bg      */
+
+  /* Derived surface colours (built from the 4 logo colours above) */
+  --brand-light: #f4f5f8; /* very light navy tint — section backgrounds           */
+  --brand-mid: #e8eaf0; /* light navy tint      — cards, chips, tags            */
+  --brand-dark: #111827; /* near-black navy      — footer, events section bg     */
+  --brand-mauve: #2b3660; /* mid navy             — affiliations band             */
+}

@@ -1,0 +1,18 @@
+/* ===== RESPONSIVE OVERRIDES =====
+   Bootstrap handles most breakpoints via its grid (col-*, d-none, etc.)
+   Add custom overrides here that Bootstrap doesn't cover.
+*/
+
+/* Hide hero visual column on tablet and below */
+@media (max-width: 991px) {
+  .hero-media-col {
+    display: none;
+  }
+}
+
+/* Tighten hero stats on small screens */
+@media (max-width: 576px) {
+  .hero-stat-val {
+    font-size: 1.4rem;
+  }
+}
