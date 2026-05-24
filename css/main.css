@@ -3,7 +3,12 @@ body {
   font-family: "Inter", sans-serif;
   color: #1e2a5a;
 }
-h1, h2, h3, h4, h5, .ff-poppins {
+h1,
+h2,
+h3,
+h4,
+h5,
+.ff-poppins {
   font-family: "Poppins", sans-serif;
 }
 
@@ -109,7 +114,7 @@ h1, h2, h3, h4, h5, .ff-poppins {
       rgba(26, 37, 71, 0.88) 55%,
       rgba(232, 168, 32, 0.2) 100%
     ),
-    url("../assets/images/hero-bg.jpg") center/cover no-repeat;
+    url("../assets/images/hero-bg.png") center/cover no-repeat;
   /* REPLACE: add assets/images/hero-bg.jpg */
 }
 .hero-badge {
