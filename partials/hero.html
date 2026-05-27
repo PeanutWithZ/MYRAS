@@ -27,8 +27,7 @@
           style="color: rgba(255, 255, 255, 0.78); font-size: 1.05rem"
         >
           Uniting engineers, technologists, and industry leaders across
-          Robotics, AI, and Automation to drive Malaysia's technological
-          future.
+          Robotics, AI, and Automation to drive Malaysia's technological future.
         </p>
         <div class="d-flex flex-wrap gap-3">
           <a href="#membership" class="btn btn-pink px-4 py-2 rounded-3"
@@ -58,13 +57,170 @@
         </div>
       </div>
       <div class="col-lg-6 d-none d-lg-flex flex-column gap-3">
-        <div class="hero-media-box">
-          <!-- REPLACE with photo: <img src="assets/images/hero-photo.jpg" style="width:100%;height:100%;object-fit:cover;border-radius:16px;" /> -->
-          <!-- OR YouTube: <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen style="border-radius:16px;border:none;"></iframe> -->
-          <span class="text-center px-3"
-            >📸 Insert hero photo or featured video here</span
+        <!-- Hero media slider -->
+        <div
+          id="heroSlider"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          style="
+            border-radius: 16px;
+            overflow: hidden;
+            aspect-ratio: 16/9;
+            background: #000;
+          "
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#heroSlider"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#heroSlider"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#heroSlider"
+              data-bs-slide-to="2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#heroSlider"
+              data-bs-slide-to="3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#heroSlider"
+              data-bs-slide-to="4"
+            ></button>
+          </div>
+
+          <div class="carousel-inner" style="height: 100%">
+            <!-- Slide 1: YouTube video (autoplay, muted) -->
+            <div
+              class="carousel-item active"
+              data-bs-interval="20000"
+              style="height: 100%"
+            >
+              <iframe
+                id="heroYT"
+                src="https://www.youtube.com/embed/hILMnKCv6jM?autoplay=1&mute=1&loop=1&playlist=hILMnKCv6jM&controls=1&rel=0&enablejsapi=1"
+                allow="autoplay; encrypted-media"
+                allowfullscreen
+                style="width: 100%; height: 100%; border: none; display: block"
+              ></iframe>
+            </div>
+
+            <!-- Slide 2 -->
+            <div
+              class="carousel-item"
+              data-bs-interval="5000"
+              style="height: 100%"
+            >
+              <img
+                src="assets/gallery/activity_arain_grda_collaboration_photo2.png"
+                alt="MYRAS President"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  display: block;
+                "
+              />
+            </div>
+
+            <!-- Slide 3 -->
+            <div
+              class="carousel-item"
+              data-bs-interval="5000"
+              style="height: 100%"
+            >
+              <img
+                src="assets/gallery/vision_mission_national_robotics_roadmap_photo2.png"
+                alt="Ministry Visit"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  display: block;
+                "
+              />
+            </div>
+
+            <!-- Slide 4 -->
+            <div
+              class="carousel-item"
+              data-bs-interval="5000"
+              style="height: 100%"
+            >
+              <img
+                src="assets/gallery/activity_dosh_ministry_visit_photo2.png"
+                alt="Logistics Week"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  display: block;
+                "
+              />
+            </div>
+
+            <!-- Slide 5 -->
+            <div
+              class="carousel-item"
+              data-bs-interval="5000"
+              style="height: 100%"
+            >
+              <img
+                src="assets/gallery/about_wift_robot_business_forum_photo2.png"
+                alt="Shenzhen Delegation"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  display: block;
+                "
+              />
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#heroSlider"
+            data-bs-slide="prev"
           >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#heroSlider"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
+
+        <script>
+          document
+            .getElementById("heroSlider")
+            .addEventListener("slide.bs.carousel", function () {
+              var yt = document.getElementById("heroYT");
+              if (yt)
+                yt.contentWindow.postMessage(
+                  '{"event":"command","func":"pauseVideo","args":""}',
+                  "*",
+                );
+            });
+        </script>
+
         <div class="d-flex gap-2 flex-wrap">
           <span class="affil-pill">🌐 GRC Member</span>
           <span class="affil-pill">🤝 IARA Affiliate</span>

@@ -1,9 +1,38 @@
 <!-- AFFILIATIONS BAND -->
-<div class="affil-band py-4">
-  <div class="container">
-    <div class="d-flex align-items-center gap-4 flex-wrap">
+<style>
+  @keyframes affil-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  .affil-track {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: max-content;
+    animation: affil-scroll 40s linear infinite;
+  }
+  .affil-track:hover {
+    animation-play-state: paused;
+  }
+  .affil-logo {
+    height: 38px;
+    object-fit: contain;
+    background: white;
+    border-radius: 6px;
+    padding: 4px 8px;
+    flex-shrink: 0;
+  }
+</style>
+
+<div class="affil-band py-4" style="overflow: hidden">
+  <div class="container-fluid px-3">
+    <div class="d-flex align-items-center gap-4">
       <div
-        class="fw-bold text-uppercase text-white"
+        class="fw-bold text-uppercase text-white flex-shrink-0"
         style="
           font-size: 0.7rem;
           letter-spacing: 0.12em;
@@ -13,23 +42,238 @@
       >
         Affiliations &amp;<br />Recognitions
       </div>
-      <div class="d-flex gap-4 flex-wrap align-items-center">
-        <div
-          class="d-flex align-items-center gap-2 text-white fw-semibold small"
-        >
-          <span class="affil-dot"></span>Global Robotics Cluster (GRC)
-        </div>
-        <div
-          class="d-flex align-items-center gap-2 text-white fw-semibold small"
-        >
-          <span class="affil-dot"></span>International Alliance of Robotics
-          Associations (IARA)
-        </div>
-        <div
-          class="d-flex align-items-center gap-2 text-white fw-semibold small"
-        >
-          <span class="affil-dot"></span>Ministry of Science, Technology
-          &amp; Innovation (MOSTI)
+
+      <div style="overflow: hidden; flex: 1">
+        <div class="affil-track">
+          <!-- SET 1 -->
+          <img
+            class="affil-logo"
+            src="assets/icons/GRC.png"
+            alt="Global Robotics Cluster"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/IARA.png"
+            alt="International Alliance of Robotics Associations"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/MOSTI-JATA.webp"
+            alt="MOSTI"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/Ministry of Innovative.png"
+            alt="Ministry of Science, Technology &amp; Innovation"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/NCRA.png"
+            alt="National Council of Robotics &amp; Automation"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/Aicra Robotics.png"
+            alt="AICRA Robotics"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/APARA.jpg"
+            alt="Asia Pacific Alliance of Robotics Associations"
+          />
+          <img class="affil-logo" src="assets/icons/CCRIA.jpg" alt="CCRIA" />
+          <img class="affil-logo" src="assets/icons/CRIA.jpg" alt="CRIA" />
+          <img
+            class="affil-logo"
+            src="assets/icons/coboteam.jpg"
+            alt="CoboTeam"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/Guangdong Robotics Association.png"
+            alt="Guangdong Robotics Association"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/hisparob.png"
+            alt="Hisparob"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/KazRobotics.png"
+            alt="KazRobotics"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/Logo_FFCRobotique_transp_fondclair_horiz-660x164.png"
+            alt="FFC Robotique"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/massrobotics.jpg"
+            alt="MassRobotics"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/New Zealand Robotics.png"
+            alt="New Zealand Robotics"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/Odense Robotics.png"
+            alt="Odense Robotics"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/Roboder.png"
+            alt="Roboder"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/Robotic Australia Group.jpg"
+            alt="Robotic Australia Group"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/Robotic Society.png"
+            alt="Robotic Society"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/Robotics Association Nepal.jpg"
+            alt="Robotics Association Nepal"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/Singapore-Industrial-Automation-Association-SIAA-aboutus_3.jpg"
+            alt="SIAA"
+          />
+          <img class="affil-logo" src="assets/icons/SVR.png" alt="SVR" />
+          <img
+            class="affil-logo"
+            src="assets/icons/WiFT Logo.webp"
+            alt="WiFT"
+          />
+          <img class="affil-logo" src="assets/icons/ZRIA.jpg" alt="ZRIA" />
+          <img class="affil-logo" src="assets/icons/alpha.png" alt="Alpha" />
+          <img class="affil-logo" src="assets/icons/R.jpg" alt="R" />
+          <!-- SET 2 — duplicate for seamless loop -->
+          <img
+            class="affil-logo"
+            src="assets/icons/GRC.png"
+            alt="Global Robotics Cluster"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/IARA.png"
+            alt="International Alliance of Robotics Associations"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/MOSTI-JATA.webp"
+            alt="MOSTI"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/Ministry of Innovative.png"
+            alt="Ministry of Science, Technology &amp; Innovation"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/NCRA.png"
+            alt="National Council of Robotics &amp; Automation"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/Aicra Robotics.png"
+            alt="AICRA Robotics"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/APARA.jpg"
+            alt="Asia Pacific Alliance of Robotics Associations"
+          />
+          <img class="affil-logo" src="assets/icons/CCRIA.jpg" alt="CCRIA" />
+          <img class="affil-logo" src="assets/icons/CRIA.jpg" alt="CRIA" />
+          <img
+            class="affil-logo"
+            src="assets/icons/coboteam.jpg"
+            alt="CoboTeam"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/Guangdong Robotics Association.png"
+            alt="Guangdong Robotics Association"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/hisparob.png"
+            alt="Hisparob"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/KazRobotics.png"
+            alt="KazRobotics"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/Logo_FFCRobotique_transp_fondclair_horiz-660x164.png"
+            alt="FFC Robotique"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/massrobotics.jpg"
+            alt="MassRobotics"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/New Zealand Robotics.png"
+            alt="New Zealand Robotics"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/Odense Robotics.png"
+            alt="Odense Robotics"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/Postgraduates.webp"
+            alt="Postgraduates"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/Roboder.png"
+            alt="Roboder"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/Robotic Australia Group.jpg"
+            alt="Robotic Australia Group"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/Robotic Society.png"
+            alt="Robotic Society"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/Robotics Association Nepal.jpg"
+            alt="Robotics Association Nepal"
+          />
+          <img
+            class="affil-logo"
+            src="assets/icons/Singapore-Industrial-Automation-Association-SIAA-aboutus_3.jpg"
+            alt="SIAA"
+          />
+          <img class="affil-logo" src="assets/icons/SVR.png" alt="SVR" />
+          <img
+            class="affil-logo"
+            src="assets/icons/WiFT Logo.webp"
+            alt="WiFT"
+          />
+          <img class="affil-logo" src="assets/icons/ZRIA.jpg" alt="ZRIA" />
+          <img class="affil-logo" src="assets/icons/alpha.png" alt="Alpha" />
+          <img class="affil-logo" src="assets/icons/R.jpg" alt="R" />
         </div>
       </div>
     </div>
